@@ -10,11 +10,48 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Science+Gothic:wght@500;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/styles.css" />
+  
+  
+
+  
 </head>
 
 <body>
+<header class="navbar">
+  <a href="#hero" class="logo">APEX</a>
 
-  <section class="program-hero">
+  <button
+    class="menu-toggle"
+    id="menuToggle"
+    type="button"
+    aria-label="Abrir menú"
+    aria-expanded="false"
+    aria-controls="navMenu"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <nav class="nav-menu" id="navMenu" hidden>
+     <a href="#">VOLVER</a>
+    <a href="#program-hero">INICIO</a>
+    <a href="#programa">DETALLE</a>
+    <a href="#evolucion">EVOLUCIÓN</a>
+    <a href="#hardware">TECNOLOGÍA</a>
+    <a href="#results-section">RESULTADOS</a>
+    <a href="#resultados-alumnos">ALUMNOS</a>
+    <a href="#datos-curso">DATOS</a>
+   
+ 
+  </nav>
+</header>
+  
+  
+  
+  
+
+<section class="program-hero" id="program-hero">
     <div class="program-overlay"></div>
 
     <div class="program-content">
@@ -29,19 +66,25 @@
         Entrená con la metodología, la tecnología y el análisis
         que utilizan los pilotos para rendir al máximo nivel.
       </p>
+      
+      
+     
 
-      <div class="program-tags">
+
+      
+
+      <div class="program-tags" >
         <span>8 SEMANAS</span>
         <span>NIVEL PRO</span>
         <span>COACHING + TELEMETRÍA</span>
       </div>
 
-      <a href="#" class="program-btn">VER PROGRAMA</a>
+      <a href="#datos-curso" class="program-btn">VER PROGRAMA</a>
     </div>
   </section>
 
     
-    <section class="stats-section">
+    <section class="stats-section" id="stats-section">
   <div class="stats-grid">
 
     <article class="stat-card">
@@ -63,11 +106,11 @@
 </section>
     
     
-    
-
     <section class="learn-section" id="programa">
+
   <div class="learn-header">
     <h2>¿QUÉ VAS A APRENDER?</h2>
+
     <p>
       Un curso completo que combina técnica, análisis y estrategia para que
       entiendas el sim racing como un verdadero piloto profesional.
@@ -76,114 +119,183 @@
 
   <div class="learn-layout">
 
+    <!-- LISTA -->
     <div class="learn-list">
 
-      <article class="learn-item active" data-index="0">
-        <button>
+      <article
+        class="learn-item active"
+        data-index="0"
+        data-image="assets/img/aprender-1.png"
+        data-alt="Análisis de telemetría"
+      >
+        <button type="button">
           <span>01.</span>
-          Análisis de telemetría
+          <strong>Análisis de telemetría</strong>
         </button>
 
-        <div class="learn-mobile-card">
-          <img src="assets/img/aprender-1.png" alt="Análisis de telemetría">
-          <div>
-            <strong>01</strong>
-            <p>Aprendé a interpretar cada dato de tu vuelta para detectar errores, oportunidades y ganar tiempo de verdad.</p>
-          </div>
+        <div class="learn-description">
+          <p>
+            Aprendé a interpretar cada dato de tu vuelta para detectar errores,
+            oportunidades y ganar tiempo de verdad.
+          </p>
+        </div>
+
+        <div class="learn-mobile-image">
+          <img
+            src="assets/img/aprender-1.png"
+            alt="Análisis de telemetría"
+          >
         </div>
       </article>
 
-      <article class="learn-item" data-index="1">
-        <button>
+      <article
+        class="learn-item"
+        data-index="1"
+        data-image="assets/img/aprender-2.png"
+        data-alt="Optimización de trazadas"
+      >
+        <button type="button">
           <span>02.</span>
-          Optimización de trazadas
+          <strong>Optimización de trazadas</strong>
         </button>
 
-        <div class="learn-mobile-card">
-          <img src="assets/img/aprender-2.png" alt="Optimización de trazadas">
-          <div>
-            <strong>02</strong>
-            <p>Descubrí las mejores líneas, puntos de frenado y referencias para ser más rápido y consistente en cada circuito.</p>
-          </div>
+        <div class="learn-description">
+          <p>
+            Descubrí las mejores líneas, puntos de frenado y referencias para
+            ser más rápido y consistente en cada circuito.
+          </p>
+        </div>
+
+        <div class="learn-mobile-image">
+          <img
+            src="assets/img/aprender-2.png"
+            alt="Optimización de trazadas"
+          >
         </div>
       </article>
 
-      <article class="learn-item" data-index="2">
-        <button>
+      <article
+        class="learn-item"
+        data-index="2"
+        data-image="assets/img/aprender-3.png"
+        data-alt="Estrategias de carrera"
+      >
+        <button type="button">
           <span>03.</span>
-          Estrategias de carrera
+          <strong>Estrategias de carrera</strong>
         </button>
 
-        <div class="learn-mobile-card">
-          <img src="assets/img/aprender-3.png" alt="Estrategias de carrera">
-          <div>
-            <strong>03</strong>
-            <p>Aprendé a tomar decisiones clave sobre combustible, paradas, ritmo y gestión para ganar carreras, no sólo vueltas.</p>
-          </div>
+        <div class="learn-description">
+          <p>
+            Aprendé a tomar decisiones clave sobre combustible, paradas, ritmo
+            y gestión para ganar carreras, no solo vueltas.
+          </p>
+        </div>
+
+        <div class="learn-mobile-image">
+          <img
+            src="assets/img/aprender-3.png"
+            alt="Estrategias de carrera"
+          >
         </div>
       </article>
 
-      <article class="learn-item" data-index="3">
-        <button>
+      <article
+        class="learn-item"
+        data-index="3"
+        data-image="assets/img/aprender-4.png"
+        data-alt="Coaching grupal"
+      >
+        <button type="button">
           <span>04.</span>
-          Coaching grupal
+          <strong>Coaching grupal</strong>
         </button>
 
-        <div class="learn-mobile-card">
-          <img src="assets/img/aprender-4.png" alt="Coaching grupal">
-          <div>
-            <strong>04</strong>
-            <p>Sesiones guiadas por coaches profesionales, con feedback personalizado y análisis en grupo para acelerar tu evolución.</p>
-          </div>
+        <div class="learn-description">
+          <p>
+            Sesiones guiadas por coaches profesionales, con feedback
+            personalizado y análisis grupal para acelerar tu evolución.
+          </p>
+        </div>
+
+        <div class="learn-mobile-image">
+          <img
+            src="assets/img/aprender-4.png"
+            alt="Coaching grupal"
+          >
         </div>
       </article>
 
-      <article class="learn-item" data-index="4">
-        <button>
+      <article
+        class="learn-item"
+        data-index="4"
+        data-image="assets/img/aprender-5.png"
+        data-alt="Acceso a campeonatos"
+      >
+        <button type="button">
           <span>05.</span>
-          Acceso a campeonatos
+          <strong>Acceso a campeonatos</strong>
         </button>
 
-        <div class="learn-mobile-card">
-          <img src="assets/img/aprender-5.png" alt="Acceso a campeonatos">
-          <div>
-            <strong>05</strong>
-            <p>Poné en práctica todo lo aprendido en campeonatos exclusivos de APEX y medite contra los mejores.</p>
-          </div>
+        <div class="learn-description">
+          <p>
+            Poné en práctica todo lo aprendido en campeonatos exclusivos de
+            APEX y medite contra los mejores.
+          </p>
         </div>
+
+        <div class="learn-mobile-image">
+    <img
+        class="image-campeonatos"
+        src="assets/img/aprender-5.png"
+        alt="Acceso a campeonatos"
+    >
+</div>
       </article>
 
-      <article class="learn-item" data-index="5">
-        <button>
+      <article
+        class="learn-item"
+        data-index="5"
+        data-image="assets/img/aprender-6.png"
+        data-alt="Certificado de finalización"
+      >
+        <button type="button">
           <span>06.</span>
-          Certificado de finalización
+          <strong>Certificado de finalización</strong>
         </button>
 
-        <div class="learn-mobile-card">
-          <img src="assets/img/aprender-6.png" alt="Certificado de finalización">
-          <div>
-            <strong>06</strong>
-            <p>Al completar el curso, recibís tu certificado que acredita tu nivel y te posiciona dentro de la comunidad APEX.</p>
-          </div>
+        <div class="learn-description">
+          <p>
+            Al completar el curso, recibís un certificado que acredita tu nivel
+            y te posiciona dentro de la comunidad APEX.
+          </p>
+        </div>
+
+        <div class="learn-mobile-image">
+          <img
+            src="assets/img/aprender-6.png"
+            alt="Certificado de finalización"
+          >
         </div>
       </article>
 
     </div>
 
+    <!-- IMAGEN DE ESCRITORIO -->
     <div class="learn-preview">
-      <div class="learn-preview-card">
-        <img id="learnImage" src="assets/img/aprender-1.png" alt="Análisis de telemetría">
 
-        <div class="learn-preview-content">
-          <span id="learnNumber">01</span>
-          <p id="learnText">
-            Aprendé a interpretar cada dato de tu vuelta para detectar errores, oportunidades y ganar tiempo de verdad.
-          </p>
-        </div>
+      <div class="learn-preview-frame">
+        <img
+          id="learnImage"
+          src="assets/img/aprender-1.png"
+          alt="Análisis de telemetría"
+        >
       </div>
+
     </div>
 
   </div>
+
 </section>
     
     
@@ -251,7 +363,7 @@
     
     
     
-    <section class="hardware-section">
+    <section class="hardware-section" id="hardware">
 
   <div class="hardware-container">
 
@@ -265,18 +377,98 @@
         ¿CON QUÉ VAS A ENTRENAR?
       </h2>
 
-      <p>
-        Cada detalle del simulador está pensado para ofrecer una experiencia
-        precisa y ayudarte a desarrollar habilidades transferibles a la pista.
-      </p>
-
     </div>
 
-    <div class="hardware-image">
+    <div class="hardware-interactive">
 
-      <img
-        src="assets/img/simulador.png"
-        alt="Simulador profesional">
+      <div class="hardware-image">
+
+        <img
+          src="assets/img/simulador2.png"
+          alt="Simulador profesional APEX"
+        >
+
+        <!-- MONITOR -->
+        <button
+          type="button"
+          class="hardware-point hardware-point-monitor"
+                data-position="monitor"
+          data-title="TRIPLE MONITOR"
+          data-text="Campo de visión ampliado para anticipar cada curva con mayor precisión."
+          aria-label="Ver información sobre Triple Monitor"
+        >
+          <span>+</span>
+        </button>
+
+        <!-- VOLANTE -->
+        <button
+          type="button"
+          class="hardware-point hardware-point-wheel"
+                data-position="wheel"
+          data-title="DIRECT DRIVE"
+          data-text="Force feedback de alta fidelidad que reproduce cada detalle del circuito."
+          aria-label="Ver información sobre Direct Drive"
+        >
+          <span>+</span>
+        </button>
+
+        <!-- PEDALES -->
+        <button
+          type="button"
+          class="hardware-point hardware-point-pedals"
+                data-position="pedals"
+          data-title="LOAD CELL"
+          data-text="Frenado basado en presión, como en un auto de competición real."
+          aria-label="Ver información sobre Load Cell"
+        >
+          <span>+</span>
+        </button>
+
+        <!-- ASIENTO -->
+        <button
+          type="button"
+          class="hardware-point hardware-point-seat"
+                data-position="seat"
+          data-title="COCKPIT PROFESIONAL"
+          data-text="Posición de manejo ergonómica diseñada para largas sesiones de entrenamiento."
+          aria-label="Ver información sobre Cockpit Profesional"
+        >
+          <span>+</span>
+        </button>
+
+        <!-- INFORMACIÓN DESKTOP -->
+        <div class="hardware-info-card" aria-live="polite">
+
+          <button
+            type="button"
+            class="hardware-info-close"
+            aria-label="Cerrar información"
+          >
+            ×
+          </button>
+
+          <h3></h3>
+          <p></p>
+
+        </div>
+
+      </div>
+
+      <!-- INFORMACIÓN MOBILE -->
+      <div class="hardware-mobile-info" aria-live="polite">
+
+        <button
+          type="button"
+          class="hardware-mobile-close"
+          aria-label="Cerrar información"
+        >
+          ×
+        </button>
+
+        <h3></h3>
+        <p></p>
+
+      </div>
 
     </div>
 
@@ -285,8 +477,8 @@
 </section>
     
    
-    
-    <section class="results-section">
+    <section class="results-section" id="results-section">
+   
   <div class="results-overlay"></div>
 
   <div class="results-content">
@@ -339,83 +531,419 @@
     
     
     
-    <section class="method-section">
+ <section class="students-section" id="resultados-alumnos">
 
-    <div class="method-header">
+  <div class="students-header">
+    <span>NUESTROS ALUMNOS</span>
 
-        <span class="method-tag">
-            LO QUE NOS DIFERENCIA
-        </span>
+    <h2>LOS NÚMEROS HABLAN SOLOS</h2>
 
-        <h2>
-            NO ES TALENTO,
-            <span>ES MÉTODO</span>
-        </h2>
+    <p>
+      Miles de curvas. Horas de análisis. Segundos que desaparecen
+      vuelta tras vuelta.
+    </p>
+  </div>
 
-        <p>
-            Cada entrenamiento está construido sobre los principios que
-            convierten una vuelta rápida en un rendimiento constante.
-        </p>
+  <div class="students-accordion">
 
-    </div>
+    <!-- ALUMNO BÁSICO -->
+    <article class="students-card active">
 
-    <div class="method-grid">
+      <button
+        type="button"
+        class="students-toggle"
+        aria-expanded="true"
+      >
+        <span>ABRIR</span>
+        <strong>ALUMNO | BÁSICO</strong>
+      </button>
 
-        <article class="method-card">
+      <div class="students-card-content">
 
-            <img src="assets/img/metodo-1.png" alt="Estrategia">
+        <img
+          src="assets/img/alumno-basico.png"
+          alt="Tomás Rodríguez, alumno del curso básico"
+        >
 
-            <div class="method-overlay"></div>
+        <div class="students-main-info">
+          <h3>
+            TOMÁS<br>
+           CASTRO
+          </h3>
 
-            <h3>ESTRATEGIA</h3>
+          <span class="students-track">MONZA</span>
 
-        </article>
+          <div class="students-improvement">
+            <span>MEJORA</span>
 
-        <article class="method-card">
+            <strong>
+              -1.284<small>s</small>
+            </strong>
+          </div>
+        </div>
 
-            <img src="assets/img/metodo-2.png" alt="Disciplina">
+        <div class="students-times">
 
-            <div class="method-overlay"></div>
+          <div>
+            <span>ANTES</span>
+            <strong>1:53.812</strong>
+          </div>
 
-            <h3>DISCIPLINA</h3>
+          <div>
+            <span>DESPUÉS</span>
+            <strong>1:52.528</strong>
+          </div>
 
-        </article>
+        </div>
 
-        <article class="method-card">
+      </div>
 
-            <img src="assets/img/metodo-3.png" alt="Competencia">
+      <p class="students-closed-title">
+        ALUMNO | BÁSICO
+      </p>
 
-            <div class="method-overlay"></div>
+    </article>
 
-            <h3>COMPETENCIA</h3>
+    <!-- ALUMNO PRO -->
+    <article class="students-card">
 
-        </article>
+      <button
+        type="button"
+        class="students-toggle"
+        aria-expanded="false"
+      >
+        <span>ABRIR</span>
+        <strong>ALUMNO | PRO</strong>
+      </button>
 
-        <article class="method-card">
+      <div class="students-card-content">
 
-            <img src="assets/img/metodo-4.png" alt="Precisión">
+        <img
+          src="assets/img/alumno-pro.png"
+          alt="Lucía Pasco, alumna del curso Pro"
+        >
 
-            <div class="method-overlay"></div>
+        <div class="students-main-info">
+          <h3>
+            LUCÍA<br>
+            PASCO
+          </h3>
 
-            <h3>PRECISIÓN</h3>
+          <span class="students-track">
+            SPA FRANCORCHAMPS
+          </span>
 
-        </article>
+          <div class="students-improvement">
+            <span>MEJORA</span>
 
-    </div>
+            <strong>
+              -2.517<small>s</small>
+            </strong>
+          </div>
+        </div>
+
+        <div class="students-times">
+
+          <div>
+            <span>ANTES</span>
+            <strong>2:19.684</strong>
+          </div>
+
+          <div>
+            <span>DESPUÉS</span>
+            <strong>2:17.167</strong>
+          </div>
+
+        </div>
+
+      </div>
+
+      <p class="students-closed-title">
+        ALUMNO | PRO
+      </p>
+
+    </article>
+
+    <!-- ALUMNO ELITE -->
+    <article class="students-card">
+
+      <button
+        type="button"
+        class="students-toggle"
+        aria-expanded="false"
+      >
+        <span>ABRIR</span>
+        <strong>ALUMNO | ELITE</strong>
+      </button>
+
+      <div class="students-card-content">
+
+        <img
+          src="assets/img/alumno-elite.png"
+          alt="Lucas Pérez, alumno del curso Elite"
+        >
+
+        <div class="students-main-info">
+          <h3>
+            LUCAS<br>
+            PÉREZ
+          </h3>
+
+          <span class="students-track">SUZUKA</span>
+
+          <div class="students-improvement">
+            <span>MEJORA</span>
+
+            <strong>
+              -3.846<small>s</small>
+            </strong>
+          </div>
+        </div>
+
+        <div class="students-times">
+
+          <div>
+            <span>ANTES</span>
+            <strong>1:59.903</strong>
+          </div>
+
+          <div>
+            <span>DESPUÉS</span>
+            <strong>1:56.057</strong>
+          </div>
+
+        </div>
+
+      </div>
+
+      <p class="students-closed-title">
+        ALUMNO | ELITE
+      </p>
+
+    </article>
+
+  </div>
 
 </section>
     
     
     
     
+  
+  <section class="course-data-section" id="datos-curso">
+
+  <div class="course-data-header">
+    <span>FICHA TÉCNICA</span>
+    <h2>DATOS DEL CURSO</h2>
+  </div>
+
+  <div class="course-data-grid">
+
+    <article class="course-data-item">
+      <span>DURACIÓN</span>
+      <h3>8 SEMANAS</h3>
+      <p>
+        Entrenamiento intensivo durante 8 semanas.
+      </p>
+    </article>
+
+    <article class="course-data-item">
+      <span>NIVEL</span>
+      <h3>PRO</h3>
+      <p>
+        Requiere experiencia previa en simuladores.
+      </p>
+    </article>
+
+    <article class="course-data-item">
+      <span>MODALIDAD</span>
+      <h3>PRESENCIAL</h3>
+      <p>
+        100% práctica en simuladores profesionales.
+      </p>
+    </article>
+
+    <article class="course-data-item">
+      <span>UBICACIÓN</span>
+      <h3>BUENOS AIRES</h3>
+      <p>
+        Entrená en nuestro centro en el corazón de la ciudad.
+      </p>
+    </article>
+
+    <article class="course-data-item">
+      <span>CUPO</span>
+      <h3>20 PERSONAS</h3>
+      <p>
+        Grupos reducidos para un seguimiento personalizado.
+      </p>
+    </article>
+
+    <article class="course-data-item">
+      <span>INVERSIÓN</span>
+      <h3>$175.000</h3>
+      <p>
+        Pesos argentinos.<br>
+        Cuotas disponibles.
+      </p>
+    </article>
+
+  </div>
+
+</section>
+  
+  
+  
+  
+    <section class="final-cta-section">
+
+    <div class="final-cta-overlay"></div>
+
+    <div class="final-cta-content">
+
+        <h2>
+            ¿LISTO PARA BAJAR<br>
+            TUS TIEMPOS?
+        </h2>
+
+        <p>
+            No entrenes como un jugador. Entrená como un piloto.
+        </p>
+
+        <a href="#curso-pro" class="final-cta-btn">
+            QUIERO EL CURSO PRO
+        </a>
+
+    </div>
+
+</section>
     
     
-    
+  
+  
+  
+  
+  
+  
+  
+  <footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <a href="#program-hero" class="footer-logo">APEX</a>
+
+      <p>
+        Entrenamiento de alto<br>
+        rendimiento para pilotos que<br>
+        buscan ir un paso más allá.
+      </p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Navegación</h3>
+
+      <nav class="footer-nav">
+        <a href="#beneficios">Beneficios</a>
+        <a href="#tecnologia">Tecnología</a>
+        <a href="#categorias">Categorías</a>
+        <a href="#cursos">Cursos</a>
+        <a href="#experiencia">Experiencias</a>
+        <a href="#opiniones">Opiniones</a>
+        <a href="#">Kit UI</a>
+      </nav>
+    </div>
+
+    <div class="footer-column footer-contact">
+      <h3>Contacto</h3>
+
+      <div class="footer-contact-item">
+        <img
+          src="assets/icons/icono-ubicacion.png"
+          alt=""
+          aria-hidden="true"
+        >
+
+        <p>
+          Av. Libertador 1840,<br>
+          Buenos Aires, Argentina
+        </p>
+      </div>
+
+      <div class="footer-contact-item">
+        <img
+          src="assets/icons/icono-telefono.png"
+          alt=""
+          aria-hidden="true"
+        >
+
+        <a href="tel:+541147855264">
+          +54 11 4785 5264
+        </a>
+      </div>
+
+      <div class="footer-contact-item">
+        <img
+          src="assets/icons/icono-email.png"
+          alt=""
+          aria-hidden="true"
+        >
+
+        <a href="mailto:info@apexsimracing.com">
+          info@apexsimracing.com
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-column">
+      <h3>Seguinos</h3>
+
+      <div class="footer-socials">
+
+        <a href="#" class="footer-social-link">
+          <img
+            src="assets/icons/icono-instagram.png"
+            alt=""
+            aria-hidden="true"
+          >
+          <span>apexsimracing</span>
+        </a>
+
+        <a href="#" class="footer-social-link">
+          <img
+            src="assets/icons/icono-youtube.png"
+            alt=""
+            aria-hidden="true"
+          >
+          <span>/APEXSimRacing</span>
+        </a>
+
+        <a href="#" class="footer-social-link">
+          <img
+            src="assets/icons/icono-tiktok.png"
+            alt=""
+            aria-hidden="true"
+          >
+          <span>@apexsimulador</span>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+  
+  
+  
+  
+  
+  
     
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 <script src="js/main.js"></script>
     
+  
+  
 
 </body>
 </html>
