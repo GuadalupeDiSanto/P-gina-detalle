@@ -2254,7 +2254,9 @@ background: rgba(0,0,0,.22);
   display: block;
 
   object-fit: cover;
-  object-position: center;
+
+  /* Mueve el encuadre hacia arriba para que se vea más la cabeza */
+  object-position: center 21%;
 
   z-index: 0;
 }
