@@ -2799,7 +2799,7 @@ background: rgba(0,0,0,.22);
   }
 
   .course-data-item {
-    min-height: 175px;
+    min-height: 107px;
     padding: 12px 7px;
 
     border-right: 1px solid rgba(3, 6, 6, 0.45);
@@ -2816,9 +2816,17 @@ background: rgba(0,0,0,.22);
     border-bottom: 1px solid rgba(3, 6, 6, 0.45);
   }
 
-  .course-data-item:nth-child(3n + 1) {
-    padding-left: 18px;
-  }
+/* Primera columna */
+
+.course-data-item:nth-child(2n + 1){
+    padding-left:7px;
+}
+
+/* Segunda columna */
+
+.course-data-item:nth-child(2n){
+    padding-left:16px;
+}
 
   /* En mobile, cada segundo elemento cierra la fila */
 
@@ -2832,13 +2840,16 @@ background: rgba(0,0,0,.22);
     border-bottom: none;
   }
 
-  .course-data-item h3 {
-    font-size: clamp(23px, 7vw, 31px);
-  }
+.course-data-item h3{
+    font-size:20px;
+    line-height:1.05;
+}
 
   .course-data-item p {
     font-size: 14px;
-    line-height: 1.4;
+    line-height: 1.2;
+  
+    padding-bottom: 16PX;
   }
 
 }
